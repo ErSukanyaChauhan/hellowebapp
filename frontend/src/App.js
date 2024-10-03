@@ -5,7 +5,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    fetch(`http://62.72.31.109:4001/`)
+    fetch(`http://api.infosectool.com`)
       .then(response => response.text())
       .then(data => setMessage(data));
   }, []);
